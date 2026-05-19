@@ -111,11 +111,33 @@ a:hover {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
     padding: 6rem 3rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 600px;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--gray-border);
+    filter: grayscale(30%);
+    transition: filter 0.3s;
+}
+
+.hero-img:hover {
+    filter: grayscale(0%);
 }
 
 .hero-title {
@@ -382,7 +404,15 @@ a:hover {
     }
 
     .hero {
+        flex-direction: column-reverse;
+        text-align: center;
         padding: 5rem 1.5rem 3rem;
+        gap: 2rem;
+    }
+
+    .hero-img {
+        width: 150px;
+        height: 150px;
     }
 
     .section {
