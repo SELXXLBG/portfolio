@@ -130,6 +130,7 @@ a:hover {
     width: 220px;
     height: 220px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     border: 2px solid var(--gray-border);
     filter: grayscale(30%);
