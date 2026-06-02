@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selyan — Automation Engineer</title>
-    <meta name="description" content="Automation Engineer spécialisé e-commerce. Je construis des systèmes automatisés sur n8n pour libérer du temps aux entrepreneurs.">
+    <title>Selyan — Automation Engineer | Systèmes n8n pour E-commerce</title>
+    <meta name="description" content="Je construis des systèmes d'automatisation sur n8n pour e-commerce : SAV, fulfillment, reporting. Audit gratuit en 2 minutes.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- BARRE D'URGENCE -->
+    <div class="urgency-bar">
+        <span class="urgency-dot"></span>
+        <span>Audit automation gratuit — Découvrez ce que vous perdez sans automation chaque mois.</span>
+        <a href="https://tally.so/r/QKD61l" target="_blank" rel="noopener" class="urgency-link">Commencer en 2 min →</a>
+    </div>
+
+    <!-- NAV -->
     <nav class="nav">
         <a href="#" class="nav-logo">selyan.</a>
         <div class="nav-links">
             <a href="#services">Services</a>
             <a href="#projets">Projets</a>
-            <a href="#stack">Stack</a>
+            <a href="#audit">Audit Gratuit</a>
+            <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
         </div>
         <button class="nav-toggle" aria-label="Menu">
@@ -29,26 +39,62 @@
     <nav class="nav-mobile">
         <a href="#services">Services</a>
         <a href="#projets">Projets</a>
-        <a href="#stack">Stack</a>
+        <a href="#audit">Audit Gratuit</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
+            <div class="hero-badge">⚡ Disponible pour nouveaux projets</div>
             <h1 class="hero-title">
                 <span class="hero-line">Automation Engineer.</span>
                 <span class="hero-line hero-line--sub">Je libère du temps aux entrepreneurs e-commerce.</span>
             </h1>
+            <p class="hero-desc">Workflows n8n sur mesure, hébergés 24/7 sur VPS. De la commande Shopify au rapport Telegram : tout s'enchaîne sans vous.</p>
             <div class="hero-ctas">
-                <a href="https://calendly.com/selyanpourqueyouhab/call" target="_blank" rel="noopener" class="btn btn--primary">Réserver un call</a>
+                <a href="https://tally.so/r/QKD61l" target="_blank" rel="noopener" class="btn btn--primary">
+                    🎯 Obtenir mon audit gratuit
+                </a>
                 <a href="#projets" class="btn btn--secondary">Voir mes projets</a>
+            </div>
+            <div class="hero-social-proof">
+                <div class="proof-item">
+                    <span class="proof-number">8+</span>
+                    <span class="proof-label">Projets livrés</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number">40+</span>
+                    <span class="proof-label">Workflows déployés</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-number">24/7</span>
+                    <span class="proof-label">Uptime VPS</span>
+                </div>
             </div>
         </div>
         <div class="hero-photo">
-            <img src="Moi.jpg" alt="Selyan" class="hero-img">
+            <img src="Moi.jpg" alt="Selyan — Automation Engineer" class="hero-img">
         </div>
     </section>
 
+    <!-- PREUVE SOCIALE -->
+    <section class="section-proof">
+        <div class="proof-inner">
+            <span class="proof-label-sm">Ils m'ont fait confiance :</span>
+            <div class="proof-logos">
+                <span>Véraia (Skincare)</span>
+                <span>Nexus Automation Lab</span>
+                <span>MemeBot (Solana)</span>
+                <span>PME Agent IA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
     <section id="services" class="section">
         <h2 class="section-title">Ce que je fais</h2>
         <div class="cards">
@@ -56,20 +102,51 @@
                 <div class="card-number">01</div>
                 <h3 class="card-title">Automation SAV</h3>
                 <p class="card-text">Réponses automatiques, tri par intention, escalade intelligente. Vos clients obtiennent une réponse en minutes, pas en jours.</p>
+                <div class="card-result">→ -80% de temps support</div>
             </div>
             <div class="card" data-reveal>
                 <div class="card-number">02</div>
                 <h3 class="card-title">Fulfillment & Reporting</h3>
                 <p class="card-text">Stats Shopify en temps réel, alertes Telegram, synchronisation logistique. Tout tourne sans intervention manuelle.</p>
+                <div class="card-result">→ 0 commande manquée</div>
             </div>
             <div class="card" data-reveal>
                 <div class="card-number">03</div>
                 <h3 class="card-title">Systèmes sur mesure</h3>
                 <p class="card-text">Workflows n8n complets, hébergés sur VPS, disponibles 24/7. Architecture pensée pour votre business, pas un template générique.</p>
+                <div class="card-result">→ Livraison en 5-10 jours</div>
             </div>
         </div>
     </section>
 
+    <!-- POURQUOI MOI (Réassurance) -->
+    <section class="section section--why">
+        <h2 class="section-title">Pourquoi travailler avec moi ?</h2>
+        <div class="why-grid">
+            <div class="why-item" data-reveal>
+                <div class="why-icon">🔧</div>
+                <h3>Pas un généraliste</h3>
+                <p>Je me concentre uniquement sur l'automation e-commerce. Je connais vos problèmes (Shopify, fournisseurs, SAV) par cœur.</p>
+            </div>
+            <div class="why-item" data-reveal>
+                <div class="why-icon">📡</div>
+                <h3>Hébergé et maintenu</h3>
+                <p>Vos workflows tournent sur un VPS dédié avec monitoring. Si quelque chose crash, je le sais avant vous.</p>
+            </div>
+            <div class="why-item" data-reveal>
+                <div class="why-icon">⚡</div>
+                <h3>Délai court</h3>
+                <p>Un premier workflow fonctionnel en 48h. Un système complet en moins de 2 semaines. Pas de phases interminables.</p>
+            </div>
+            <div class="why-item" data-reveal>
+                <div class="why-icon">📊</div>
+                <h3>ROI mesurable</h3>
+                <p>Chaque automatisation que je livre est accompagnée d'un rapport montrant le temps gagné et les gains générés.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
     <section id="projets" class="section">
         <h2 class="section-title">Projets</h2>
         <div class="projects">
@@ -78,77 +155,179 @@
                     <h3 class="project-name">Nexus Automation Lab</h3>
                     <a href="https://nexuscreators.pages.dev/" target="_blank" rel="noopener" class="project-link">Voir &rarr;</a>
                 </div>
-                <p class="project-desc">Infrastructure d'automation complète pour e-commerce. Systèmes de SAV, fulfillment et reporting déployés et maintenus pour des boutiques en ligne.</p>
+                <p class="project-desc">Pipeline de génération de leads 100% automatisé : scraping multi-source (LinkedIn, Reddit, Facebook) → scoring IA → audit PDF personnalisé → séquence email de conversion. De 0 à prospect qualifié sans action manuelle.</p>
                 <div class="project-tags">
-                    <span>n8n</span><span>Shopify</span><span>VPS</span><span>Telegram</span>
+                    <span>n8n</span><span>Groq LLaMA3</span><span>SerpAPI</span><span>Apollo.io</span><span>Telegram</span>
                 </div>
             </article>
             <article class="project" data-reveal>
                 <div class="project-header">
-                    <h3 class="project-name">VERAÏA</h3>
+                    <h3 class="project-name">VÉRAÏA — E-commerce Skincare</h3>
                 </div>
-                <p class="project-desc">Boutique Shopify beauté & skincare avec système de fulfillment et SAV entièrement automatisé. De la commande à la livraison, zéro friction.</p>
+                <p class="project-desc">Boutique Shopify premium avec 8 workflows n8n orchestrés : commande fournisseur automatique, tracking colis, upsell post-achat 4h après commande, séquence fidélisation D+3→D+60, rapport Telegram quotidien. Zéro intervention manuelle.</p>
                 <div class="project-tags">
-                    <span>Shopify</span><span>n8n</span><span>Automation</span>
+                    <span>Shopify</span><span>React 19</span><span>n8n</span><span>Groq</span><span>Cloudflare</span>
                 </div>
             </article>
             <article class="project" data-reveal>
                 <div class="project-header">
-                    <h3 class="project-name">MemeBot</h3>
+                    <h3 class="project-name">MemeBot — Solana Scalping</h3>
                     <span class="project-badge">Confidentiel</span>
                 </div>
-                <p class="project-desc">Bot de trading Solana automatisé, orchestré via n8n. Exécution, monitoring et alertes en temps réel.</p>
+                <p class="project-desc">Bot de trading automatisé sur Solana Mainnet. 4 workflows n8n en cascade : scanner (Dexscreener toutes les 2 min), exécution (Jupiter API), monitoring prix (toutes les 30s), profit sweep + log GitHub. Take-Profit +10%, Stop-Loss -12%.</p>
                 <div class="project-tags">
-                    <span>Solana</span><span>n8n</span><span>Trading</span>
+                    <span>Solana</span><span>n8n</span><span>Jupiter API</span><span>Web3.js</span><span>VPS Docker</span>
                 </div>
             </article>
         </div>
     </section>
 
+    <!-- SECTION AUDIT GRATUIT (CTA Principal) -->
+    <section id="audit" class="section section--audit">
+        <div class="audit-inner">
+            <div class="audit-content">
+                <div class="audit-badge">Gratuit · 2 minutes</div>
+                <h2 class="audit-title">Découvrez combien vous perdez chaque mois sans automation</h2>
+                <p class="audit-desc">Répondez à 5 questions sur votre business. Je vous envoie un audit personnalisé avec les workflows exacts à mettre en place pour votre boutique — sans engagement.</p>
+                <ul class="audit-list">
+                    <li>✓ Analyse de votre SAV & fulfillment</li>
+                    <li>✓ Estimation du temps récupérable par semaine</li>
+                    <li>✓ Recommandation des 3 automatisations prioritaires</li>
+                    <li>✓ Réponse sous 24h</li>
+                </ul>
+                <a href="https://tally.so/r/QKD61l" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+                    🎯 Obtenir mon audit gratuit maintenant
+                </a>
+                <p class="audit-note">100% gratuit. Aucune carte bancaire. Pas de démarchage agressif.</p>
+            </div>
+            <div class="audit-visual">
+                <div class="audit-card-mockup">
+                    <div class="mockup-header">
+                        <span class="mockup-dot red"></span>
+                        <span class="mockup-dot yellow"></span>
+                        <span class="mockup-dot green"></span>
+                        <span class="mockup-title">audit_report.pdf</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-line long"></div>
+                        <div class="mockup-line medium"></div>
+                        <div class="mockup-spacer"></div>
+                        <div class="mockup-line short"></div>
+                        <div class="mockup-line long"></div>
+                        <div class="mockup-line medium"></div>
+                        <div class="mockup-spacer"></div>
+                        <div class="mockup-highlight">
+                            <span>⏱ Temps récupérable / semaine</span>
+                            <span class="mockup-value">12h</span>
+                        </div>
+                        <div class="mockup-highlight">
+                            <span>🔧 Workflows prioritaires</span>
+                            <span class="mockup-value">3</span>
+                        </div>
+                        <div class="mockup-highlight">
+                            <span>💶 ROI estimé / mois</span>
+                            <span class="mockup-value">+840€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STACK -->
     <section id="stack" class="section">
         <h2 class="section-title">Stack & Outils</h2>
         <div class="stack-grid" data-reveal>
-            <div class="stack-item">
-                <span class="stack-name">n8n</span>
+            <div class="stack-item"><span class="stack-name">n8n</span></div>
+            <div class="stack-item"><span class="stack-name">Shopify</span></div>
+            <div class="stack-item"><span class="stack-name">React / Vite</span></div>
+            <div class="stack-item"><span class="stack-name">Solana / Web3</span></div>
+            <div class="stack-item"><span class="stack-name">Groq LLaMA3</span></div>
+            <div class="stack-item"><span class="stack-name">Telegram Bot</span></div>
+            <div class="stack-item"><span class="stack-name">VPS Docker</span></div>
+            <div class="stack-item"><span class="stack-name">Cloudflare</span></div>
+            <div class="stack-item"><span class="stack-name">Google Sheets</span></div>
+            <div class="stack-item"><span class="stack-name">APIs REST</span></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <h2 class="section-title">Questions fréquentes</h2>
+        <div class="faq-list">
+            <div class="faq-item" data-reveal>
+                <button class="faq-question">
+                    <span>Combien coûte une automatisation ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Ça dépend de la complexité du workflow. Un système simple (SAV automatique) démarre à partir de 300€. Un système complet (fulfillment + SAV + reporting + lifecycle emails) se situe entre 800€ et 1 500€. L'audit gratuit vous donne une estimation précise sans engagement.</p>
+                </div>
             </div>
-            <div class="stack-item">
-                <span class="stack-name">Shopify</span>
+            <div class="faq-item" data-reveal>
+                <button class="faq-question">
+                    <span>Je ne suis pas technique, est-ce un problème ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Pas du tout. Je gère l'intégralité de la partie technique. Vous m'expliquez votre business en français, je traduis ça en workflows. Je vous livre un système qui tourne tout seul, avec une documentation claire.</p>
+                </div>
             </div>
-            <div class="stack-item">
-                <span class="stack-name">Solana</span>
+            <div class="faq-item" data-reveal>
+                <button class="faq-question">
+                    <span>Quel est le délai de livraison ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Un premier workflow fonctionnel peut être livré en 48h. Un système complet prend généralement 5 à 10 jours ouvrés selon la complexité. Vous êtes informé à chaque étape.</p>
+                </div>
             </div>
-            <div class="stack-item">
-                <span class="stack-name">Telegram</span>
+            <div class="faq-item" data-reveal>
+                <button class="faq-question">
+                    <span>Que se passe-t-il si un workflow tombe en panne ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Les workflows tournent sur un VPS avec monitoring. En cas de problème, je reçois une alerte Telegram avant vous et je corrige. Un support de 30 jours est inclus après chaque livraison.</p>
+                </div>
             </div>
-            <div class="stack-item">
-                <span class="stack-name">VPS</span>
-            </div>
-            <div class="stack-item">
-                <span class="stack-name">Node.js</span>
-            </div>
-            <div class="stack-item">
-                <span class="stack-name">APIs REST</span>
+            <div class="faq-item" data-reveal>
+                <button class="faq-question">
+                    <span>L'audit gratuit est vraiment gratuit ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Oui, 100% gratuit. Aucune carte bancaire requise, aucun engagement. Vous répondez à 5 questions sur votre boutique, je vous envoie un audit personnalisé avec les automations prioritaires pour votre business.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section section--contact">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-text">Un projet d'automation en tête ? Parlons-en.</p>
-        <div class="contact-cta">
-            <a href="https://calendly.com/selyanpourqueyouhab/call" target="_blank" rel="noopener" class="btn btn--primary">Réserver un call découverte</a>
+        <h2 class="section-title">Parlons de votre projet</h2>
+        <p class="contact-text">Un projet d'automation en tête ? Réservez un call de 30 min ou commencez par l'audit gratuit.</p>
+        <div class="contact-ctas">
+            <a href="https://tally.so/r/QKD61l" target="_blank" rel="noopener" class="btn btn--primary">🎯 Audit gratuit en 2 min</a>
+            <a href="https://calendly.com/selyanpourqueyouhab/call" target="_blank" rel="noopener" class="btn btn--secondary">Réserver un call</a>
         </div>
         <a href="mailto:selyanpourqueyouhab@gmail.com" class="contact-mail">selyanpourqueyouhab@gmail.com</a>
         <div class="contact-links">
-            <a href="https://x.com/Sel_wwl" target="_blank" rel="noopener">X</a>
+            <a href="https://x.com/Sel_wwl" target="_blank" rel="noopener">X / Twitter</a>
             <a href="https://www.linkedin.com/in/selyan-pourquey-a75796382/" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/SELXXLBG" target="_blank" rel="noopener">GitHub</a>
         </div>
     </section>
 
     <footer class="footer">
-        <span>&copy; 2026 Selyan. Tous droits réservés.</span>
+        <span>© 2026 Selyan. Tous droits réservés.</span>
     </footer>
+
+    <!-- STICKY CTA (apparaît après scroll) -->
+    <div class="sticky-cta" id="stickyCta">
+        <span>Automatisez votre boutique →</span>
+        <a href="https://tally.so/r/QKD61l" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Audit gratuit</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
