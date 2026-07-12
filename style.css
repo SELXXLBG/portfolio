@@ -122,7 +122,7 @@ a:hover { opacity: 0.7; }
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
     font-size: 0.78rem;
     font-weight: 600;
     color: var(--accent);
@@ -131,6 +131,15 @@ a:hover { opacity: 0.7; }
     border-radius: 999px;
     margin-bottom: 1.5rem;
     background: rgba(232, 255, 107, 0.06);
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    animation: pulse-dot 1.8s ease-in-out infinite;
 }
 
 .hero-img {
@@ -193,8 +202,17 @@ a:hover { opacity: 0.7; }
     flex-wrap: wrap;
 }
 .proof-label-sm { font-size: 0.78rem; color: var(--gray); font-weight: 500; white-space: nowrap; }
-.proof-logos { display: flex; gap: 2rem; flex-wrap: wrap; }
-.proof-logos span { font-size: 0.82rem; font-weight: 600; color: var(--gray); border: 1px solid var(--gray-border); padding: 0.3rem 0.8rem; }
+.proof-logos { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.proof-tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--white);
+    border: 1px solid var(--gray-border);
+    padding: 0.3rem 0.8rem;
+    letter-spacing: 0.02em;
+    transition: border-color 0.2s, color 0.2s;
+}
+.proof-tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── BUTTONS ── */
 .btn {
@@ -239,8 +257,22 @@ a:hover { opacity: 0.7; }
     max-width: 1100px;
     margin: 0 auto;
 }
-.why-item { padding: 2rem; border: 1px solid var(--gray-border); }
+.why-item { padding: 2rem; border: 1px solid var(--gray-border); transition: border-color 0.3s; }
+.why-item:hover { border-color: var(--accent); }
 .why-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+.why-icon--text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(232, 255, 107, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 1rem;
+}
 .why-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
 .why-item p { font-size: 0.875rem; color: var(--gray); line-height: 1.7; }
 
@@ -311,6 +343,14 @@ a:hover { opacity: 0.7; }
     font-size: 0.9rem;
     color: var(--white);
     font-weight: 500;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+.check {
+    color: var(--accent);
+    font-weight: 700;
+    flex-shrink: 0;
 }
 
 .audit-note {
@@ -361,10 +401,22 @@ a:hover { opacity: 0.7; }
 .mockup-value { font-weight: 700; color: var(--accent); font-size: 1rem; }
 
 /* ── STACK ── */
-.stack-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
-.stack-item { border: 1px solid var(--gray-border); padding: 1rem 1.5rem; transition: border-color 0.3s; }
-.stack-item:hover { border-color: var(--white); }
-.stack-name { font-size: 0.9rem; font-weight: 600; }
+.stack-categories { display: flex; flex-direction: column; gap: 2.5rem; }
+.stack-category {}
+.stack-cat-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-border);
+}
+.stack-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.stack-item { border: 1px solid var(--gray-border); padding: 0.6rem 1.1rem; transition: border-color 0.2s, background 0.2s; }
+.stack-item:hover { border-color: var(--accent); background: rgba(232, 255, 107, 0.04); }
+.stack-name { font-size: 0.85rem; font-weight: 600; }
 
 /* ── FAQ ── */
 .faq-list { display: flex; flex-direction: column; gap: 0; }
